@@ -1,0 +1,23 @@
+---
+title: "Group 07 CA pollution burden"
+author: "Karla Bonilla and Madeline McEwen"
+date: "11/24/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r library}
+library(tidyverse)
+library(here)
+library(janitor)
+```
+
+```{r data reading}
+ces <- read.csv(here("data", "ces3demographics.csv")) %>%
+  clean_names()
+
+```
+
