@@ -28,12 +28,12 @@ ggplot(data=ces,aes(x=white, y=ces_3_0_score))+
   geom_hex() +
   labs(x = "% White Population",
        y = "CES 3.0 Score", 
-       tittle = "Relationship between % White Population and the CalEnviroScreen 3.0 score in California")+
+       title = "Relationship between % White Population and the CalEnviroScreen 3.0 score in California")+
   scale_fill_gradient(low="navy", high="orange")+
   theme_minimal()
 ```
 
-
+This graph shows the relationship between percentage of white population and communities in CA that are most impacted by different forms of pollution. As percentage of white population increases, the CES 3.0 score decreases, suggesting that the most vulnerable communities have a demographic that does not include a large portion of white people. This relationship is strongest on both ends of the graph where density increases, suggesting that a large percentage of white population (~75%) significantly decreases CES 3.0 score while a small percentage (~0%) significantly increases the CES score. 
 
 
 
