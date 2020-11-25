@@ -22,7 +22,7 @@ ces <- read.csv(here("data", "ces3demographics.csv")) %>%
 ```
 
 ```{r}
-#Scatterplot graph
+#geom_hex graph
 
 ggplot(data=ces,aes(x=white, y=ces_3_0_score))+
   geom_hex() +
